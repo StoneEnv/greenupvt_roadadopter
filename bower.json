@@ -1,0 +1,22 @@
+{
+  "name": "greenup.road.adopter",
+  "version": "2016.0.1",
+  "author": "Nick Floersch",
+  "readme": "README.md",
+  "license": "AGPL-3.0+",
+  "repository": "https://github.com/seinick/greenupvt_roadadopter.git",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-animate": "~1.4.7",
+    "angular-cookies": "~1.4.3",
+    "angular-sanitize": "~1.4.7",
+    "angular-ui-router": "~0.2.14",
+    "es5-shim": "~3.1.0",
+    "json3": "~3.3.2",
+    "ui-router-extras": "~0.1.0"
+  },
+  "appPath": "app",
+  "resolutions": {
+    "angular": "1.4.7"
+  }
+}

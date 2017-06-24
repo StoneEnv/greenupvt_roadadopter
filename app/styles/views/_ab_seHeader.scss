@@ -1,0 +1,80 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Authors: Nick Floersch - nick@stone-env.com
+ | File: _ab_seHeader.scss
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+se-header {
+	// position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex: 0 0 50px;
+	align-items: stretch;
+	align-content: stretch;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+    height: auto;
+    padding: 0px;
+    border-bottom: 1px solid $color-chemical;
+    background-color: #4b8929;
+    background-image: url('/images/greenup-pattern-bg.png');
+
+    color: #424242;
+
+    a {
+    	cursor: pointer;
+    }
+
+    .title {
+    	flex: 0 0 475px;
+	    padding: 7px 20px 0px 15px;
+	    font-size: 22pt;
+	    color: $color-chemical;
+	    font-weight: 400;
+	    //font-family: 'Libre Baskerville' , serif;
+	    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	    height: 50px;
+	    margin-left: 0;
+	}
+
+	.subtitle {
+		flex: 1 1;
+	    font-weight: 400;
+	    font-family: Tahoma, Geneva, sans-serif;
+	    font-size: 13.5pt;
+	    color: $color-chemical;
+	    height: 50px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+
+	.vertCenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+		height: 100%;
+	}
+
+	.logo {
+		height: 50px;
+		vertical-align: top;
+	}
+}

@@ -1,0 +1,148 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Authors: Nick Floersch - nick@stone-env.com
+ | File: _ab_seMap.scss
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+se-map {
+	// flex: 1 1 auto;
+	// display: flex;
+	// flex-flow: row nowrap;
+	// position: relative;
+	flex-direction: row;
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    top: 50px;
+
+	#mapDiv {
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+
+		#mapOverlayLeft { 
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 340px;
+			z-index: 495;
+			background-color: white;
+			border-right: 1px solid $color-chemical;
+			margin: 0;
+			padding: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			.mapInstructions {
+				margin: 0 10px;
+				font-family: "PT Sans", Arial, Helvetica, sans-serif;
+				font-size: 10pt;
+			}
+		}
+
+		#mapCenter { 
+			flex: 1 1 auto;
+			flex-direction: column;
+			height:100%;
+			z-index: 495;
+			background-color: white;
+			//border-right: 1px solid $color-chemical;
+			margin: 0;
+			padding: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			#mapOverlayTop {
+				flex-grow: 0;
+				flex-shrink: 0;
+				height: 0;
+				width: 100%;
+				z-index: 900;
+				background-color: white;
+
+				margin: 0;
+				padding: 0;
+				overflow-y: auto;
+				overflow-x: hidden;
+
+				//border: 1px solid $color-chemical;
+			}
+
+			#mapBox {
+				display: flex;
+				height: calc(100% - 100px);
+
+				#LocateButton {
+					position: absolute;
+					top: 95px;
+					left: 360px;
+					z-index: 999;
+				}
+			}
+
+			#mapOverlayBottom {
+				flex-grow: 0;
+				flex-shrink: 0;
+				height: 100px;
+				width: 100%;
+				z-index: 900;
+				background-color: white;
+
+				margin: 0;
+				padding: 0;
+				overflow-y: auto;
+				overflow-x: hidden;
+
+				border-top: 1px solid $color-chemical;
+			}
+
+		}
+
+		#mapOverlayRight { 
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 0;
+			z-index: 495;
+			background-color: white;
+			//border-right: 1px solid $color-chemical;
+			margin: 0;
+			padding: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+
+
+	}
+
+	#map {
+		flex: 4 auto;
+		height: 100%;
+	    margin: 0;
+
+	    #BasemapToggle {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			z-index: 50;
+		}
+	    
+	}
+
+	
+}
+

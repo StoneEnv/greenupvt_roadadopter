@@ -1,0 +1,41 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Authors: Nick Floersch - nick@stone-env.com
+ | File: _seLanding.scss
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.landingWrapper {
+	padding: 0 20px 0 20px;
+	//font-family: 'Libre Baskerville' , serif;
+	font-size: 12pt;
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+
+	a {
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.getStarted {
+		font-size: 16pt;
+	}
+
+	.disclaimer {
+		font-size: 10pt;
+	}
+}

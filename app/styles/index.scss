@@ -1,0 +1,182 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Authors: Nick Floersch - nick@stone-env.com
+ | File: index.scss
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+$color-dicamba: #730E21;
+$color-glyphosate: RGBA(0, 79, 47, 1); //#004f2f;
+$color-glyphosate-half: RGBA(0, 79, 47, 0.5);
+$color-chemical: $color-glyphosate;
+$color-chemical-half: $color-glyphosate-half;
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+@import "views/seLanding";
+@import "views/ab_seMap";
+@import "views/ab_seHeader";
+@import "views/ab_seFooter";
+@import "views/seMapAttachmentEditor";
+@import "views/seMapRelatedRecords";
+@import "views/seModal";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* autoprefixer: off */
+.buttonGray
+{
+    border: 1px solid #ccc;
+    background: #ccc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+    background: -webkit-linear-gradient(top, #ffffff, #cccccc);
+    background: -moz-linear-gradient(top, #ffffff, #cccccc);
+    background: -ms-linear-gradient(top, #ffffff, #cccccc);
+    background: -o-linear-gradient(top, #ffffff, #cccccc);
+    padding: 9px 18px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #000;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+        font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* autoprefixer: off */
+.buttonGray:hover
+{
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #000000;
+}
+/* autoprefixer: off */
+.buttonGray:active
+{
+    border: 1px solid #ccc;
+    background: #fff;
+}
+/* autoprefixer: off */
+.buttonRed
+{
+    border: 1px solid #000;
+    background: #730e21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1a0307), to(#730e21));
+    background: -webkit-linear-gradient(top, #1a0307, #730e21);
+    background: -moz-linear-gradient(top, #1a0307, #730e21);
+    background: -ms-linear-gradient(top, #1a0307, #730e21);
+    background: -o-linear-gradient(top, #1a0307, #730e21);
+    padding: 9px 18px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+        font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+    float: left;
+    cursor: pointer;
+}
+/* autoprefixer: off */
+.buttonRed:hover
+{
+    border-top-color: #730e21;
+    background: #730e21;
+    color: #fff;
+}
+/* autoprefixer: off */
+.buttonRed:active
+{
+    border-top-color: #730e21;
+    background: #730e21;
+}
+/* autoprefixer: off */
+.buttonGreen {
+    border: 1px solid #000;
+    background: #004f2f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#011c11), to(#004f2f));
+    background: -webkit-linear-gradient(top, #011c11, #004f2f);
+    background: -moz-linear-gradient(top, #011c11, #004f2f);
+    background: -ms-linear-gradient(top, #011c11, #004f2f);
+    background: -o-linear-gradient(top, #011c11, #004f2f);
+    padding: 9px 18px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    float: left;
+    cursor: pointer;
+}
+/* autoprefixer: off */
+.buttonGreen:hover {
+    border-top-color: #004f2f;
+    background: #004f2f;
+    color: #ffffff;
+}
+/* autoprefixer: off */
+.buttonGreen:active {
+    border-top-color: #004f2f;
+    background: #004f2f;
+}
+
+.view-container {
+	z-index: 10;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.esriScalebar {
+    z-index:999 !important;
+    left: 325px !important;
+}
+
+a {
+	color: $color-chemical;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.noclickthrough {
+    pointer-events: none;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "greenup.road.adopter",
+  "version": "2016.5.1",
+  "author": "Nick Floersch",
+  "readme": "README.md",
+  "license": "AGPL-3.0+",
+  "repository": "https://github.com/seinick/greenupvt_roadadopter.git",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnano": "^3.2.0",
+    "grunt-autoprefixer": "^0.7.3",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-concurrent": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-filerev": "^0.2.1",
+    "grunt-google-cdn": "^0.4.0",
+    "grunt-madge": "0.0.1",
+    "grunt-newer": "^0.7.0",
+    "grunt-ngmin": "^0.0.3",
+    "grunt-postcss": "^0.6.0",
+    "grunt-svgmin": "^0.4.0",
+    "grunt-usemin": "^2.1.1",
+    "grunt-watch-nospawn": "0.0.8",
+    "grunt-wiredep": "^1.7.0",
+    "imagemin": "^5.3.1",
+    "imagemin-gifsicle": "^5.1.0",
+    "load-grunt-tasks": "^0.4.0",
+    "pixrem": "^3.0.0",
+    "time-grunt": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

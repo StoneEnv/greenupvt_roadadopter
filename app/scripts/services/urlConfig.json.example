@@ -1,0 +1,7 @@
+{
+	"webServiceRootURL" : "http://localhost:8888/",
+	"agsRootURL" : "http://ags.stone-env.net/arcgis/",
+	"webServiceAuthRootURL":"http://localhost:8888/login",
+	"webServiceAddUserURL":"http://localhost:8888/addUser",
+	"authString" : "Basic OTeXAadsikf097ausjdf7uaJsedf89ZmZh"
+}

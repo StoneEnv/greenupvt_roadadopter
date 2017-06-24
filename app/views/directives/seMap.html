@@ -1,0 +1,106 @@
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Author: Nick Floersch - nick@stone-env.com
+ | File: seMap.html
+ | Description: HTML template for seMap directive.
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<div id="mapDiv">
+
+
+
+
+    <!-- **** Basemap Selection Dijit Location **** -->
+    <!--  -->
+
+    <!-- **** TOOLS PANEL ****
+        map div is appended dymanically in seMap.js on init
+    -->
+    <div id="mapOverlayLeft">
+        <div id="content" class="overlayLeft">
+            <div class="mapInstructions">
+                <p>Click on a Richmond road to select it.<br/> 
+                (a selected road is highlighted in <span style="background-color: cyan">bright-blue</span>).</p>
+                <p>The town's roads have been cut into 1/4-mile chunks for adoption. Adopt one or adopt them all!</p>
+                <p>Roads highlighted with <span style="background-color: #A6FA6C">green</span> have had one or more people adopt them!</p>
+            </div>
+            <se-modal id='secretModal'>
+            </se-modal>
+            <se-map-related-records 
+                map-id="map" 
+                layer-id="lyrRoads"
+                related-table-name="Roads_Comments">
+            </se-map-related-records>
+
+            <!-- <se-map-attachment-editor 
+                map-id="map" 
+                layer-id="lyrAdoptedRoadsComments">
+            </se-map-attachment-editor> -->
+        </div>
+    </div> 
+
+    <div id="mapCenter">
+        <div id="mapOverlayTop">
+            <div id="content" class="overlayTop">
+            </div>
+        </div>
+
+        <div id="mapBox">
+        </div>
+
+
+        <div id="mapOverlayBottom">
+            <div id="content" class="overlayBottom">
+                <div id="BasemapToggle"></div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="mapOverlayRight">
+        <div id="content" class="overlayRight">
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- HTML elements here -->
+
+<svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+        <feOffset dx="0" dy="0" result="offsetblur"/>
+        <feFlood flood-color="rgba(0,0,0,1)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
+
+<svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="glow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+        <feOffset dx="0" dy="0" result="offsetblur"/>
+        <feFlood flood-color="rgba(255,255,255,1)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
+

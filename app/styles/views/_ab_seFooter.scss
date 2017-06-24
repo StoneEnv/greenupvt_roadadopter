@@ -1,0 +1,46 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+ | All Code Copyright 2016 Stone Environmental, Inc.
+ | This program is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU Affero General Public License as published
+ | by the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | This program is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU Affero General Public License for more details.
+ |
+ | You should have received a copy of the GNU Affero General Public License
+ | along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ |
+ | Authors: Nick Floersch - nick@stone-env.com
+ | File: _ab_seFooter.scss
+ \ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+@import "partials/_ab_util.scss";
+
+se-footer {
+	clear: both;
+	display: block;
+    margin-top: 0;
+    z-index: 999;
+	flex: 0 0 40px;
+	height: 40px;
+
+    border-top: 1px solid $color-chemical;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+
+    background-color: #4b8929;
+    background-image: url('/images/greenup-pattern-bg.png');
+
+	padding: 0px 15px 0 15px;
+	text-align: center;
+	color: #424242;
+	font-size: 12pt;
+	line-height: 5pt;
+
+	font-weight: bold;
+
+	a {
+		cursor: pointer;
+	}
+}
